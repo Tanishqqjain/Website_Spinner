@@ -1,6 +1,8 @@
-//Alert Before using the below code first include (Bootstrap and Jquery files or CDNs)
+//Alert Before using the below code first include (Bootstrap and Jquery files or CDNs) :
+Boostrap CDN --> https://getbootstrap.com/docs/4.0/getting-started/introduction/
+Jquery CDN --> https://code.jquery.com/
 
-//Paste the following code before closing of body tag
+//Paste the following code before </body> tag
 <div class="w-100 " style="height: 100% !important; position: fixed; display: flex; justify-content: center; align-items: center; z-index: 99999; background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0; color:mintcream;" id="spinner">
     <div class="spinner-border" role="status">
         <span class="sr-only">Loading...</span>
@@ -32,12 +34,17 @@ Examples =>
 </script>
 
 3.)) When an anchor tag a link is clicked then first Enable the Spinner and then move to specified page.
-Step1: Convert the <a> tag to <div> tag
-Step2: Add the folloeing attribute (Replace "newPage.html" --> "href_link.htnl") 
-        onClick="(function(){ $('#spinner').fadeIn("fast"); window.location.href = "newPage.html"; })();"
 
-An example is shown below :
+    Step1: Convert the <a> tag to <div> tag
 
-<a href="name1.html" >Click me</a>
-            👇🏻👇🏻👇🏻
-<div onClick="(function(){ $('#spinner').fadeIn("fast"); window.location.href = "name1.html"; })();" >Click me</div>
+    Step2: Add the following attribute (Replace "newPage.html" --> "href_link.htnl") 
+            
+            onClick="(function(){ $('#spinner').fadeIn("fast"); window.location.href = "newPage.html"; })();"
+
+    An example is shown below :
+
+    <a href="name1.html" >Click me</a>
+
+                👇🏻👇🏻👇🏻
+                
+    <div onClick="(function(){ $('#spinner').fadeIn("fast"); window.location.href = "name1.html"; })();" >Click me</div>
