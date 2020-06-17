@@ -26,26 +26,29 @@ Easy to use Spinner for websites, Which enables novice to insert spinner in thei
 
 ## Some Useful Examples =>
 
-1. )) when Page is completely loaded then hide the spinner
+### 1. )) when Page is completely loaded then hide the spinner
+```
     <script>
         $(window).on('load', function(){
             $('#spinner').fadeOut("slow");
         });
     </script>
+```
 
-2. )) when an element (id="btn1") is clicked then show spinner
+### 2. )) when an element (id="btn1") is clicked then show spinner
+```
     <script>
         $('#btn1').on('click', function(){
             $('#spinner').fadeIn("slow");
         });
     </script>
+```
 
-3. )) When an anchor tag a link is clicked then first Enable the Spinner and then move to specified page.
-##### Step1: 
-- Convert the `<a>` tag to `<div>` tag
+### 3. )) When an anchor tag a link is clicked then first Enable the Spinner and then move to specified page.
 
-##### Step2: 
-- Add the following attribute _(Replace "newPage.html" --> "href_link.html")_
+##### Step1: - Convert the `<a>` tag to `<div>` tag
+
+##### Step2: - Add the following attribute _(Replace "newPage.html" --> "href_link.html")_
 
 `onClick="(function(){ $('#spinner').fadeIn("fast"); window.location.href = "newPage.html"; })();"`
 
@@ -53,7 +56,9 @@ Easy to use Spinner for websites, Which enables novice to insert spinner in thei
 
 ```
 <a href="name1.html" >Click me</a>
+
             👇🏻👇🏻👇🏻
+
 <div onClick="(function(){ $('#spinner').fadeIn("fast"); window.location.href = "name1.html"; })();" >Click me</div>
 
 ```
