@@ -7,7 +7,7 @@
 - [Boostrap CDN](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 - [Jquery CDN](https://code.jquery.com/)
 
-### How to Use
+## How to Use
 
 #### Include the following code before `</body>` tag
 
@@ -27,7 +27,7 @@
 
 `$('#spinner').fadeOut("slow");`
 
-### Some Useful Examples =>
+## Some Useful Examples =>
 
 #### 1. )) when Page is completely loaded then hide the spinner
 
